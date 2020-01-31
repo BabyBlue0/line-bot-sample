@@ -62,16 +62,6 @@ def handle_message(event):
         messages
     )
     
-    """
-    image_url = 'https://arcane-sea-27299.herokuapp.com/static/images/sample1.jpg'
-    image_message = ImageSendMessage(
-        original_content_url=image_url,
-        preview_image_url=image_url
-    )
-
-    line_bot_api.reply_message( event.reply_token, image_message )
-    """
-
 
 if __name__ == "__main__":
     port = int(os.getenv("PORT"))
