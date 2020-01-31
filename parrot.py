@@ -60,7 +60,9 @@ def handle_message(event):
     files = os.listdir( '/app' + image_url_dir )
     print( files )
     image_url_file = files[ randint( len(files) ) ]
+    print( image_url_file )
     image_url = image_url_base + '/' + image_url_dir + '/' + image_url_file
+    print( image_url )
     image_message = ImageSendMessage(
         original_content_url = image_url,
         preview_image_url = image_url
