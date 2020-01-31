@@ -43,7 +43,7 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
 
-    image_url = 'https://arcane-sea-27299.herokuapp.com/sample1.jpg'
+    image_url = 'https://arcane-sea-27299.herokuapp.com/static/images/sample1.jpg'
     #image_url = r'https://paizacloud-agent-babylinebot.paiza-user-agent.cloud/api/resource?resource=%2Fhome%2Fubuntu%2Fline-bot-sample%2Fstatic%2Fimages%2Fsample1.jpg&content_type=image/jpeg&access_token=800e51199449a06c7ed0c29629e43df5'
     print( event )
     image_message = ImageSendMessage(
