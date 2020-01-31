@@ -1,5 +1,6 @@
 from flask import Flask, request, abort
 import os
+from random import randint
 
 from linebot import (
     LineBotApi, WebhookHandler
@@ -43,18 +44,27 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
 
-    image_url = 'https://arcane-sea-27299.herokuapp.com/static/images/sample1.jpg'
-    #image_url = r'https://paizacloud-agent-babylinebot.paiza-user-agent.cloud/api/resource?resource=%2Fhome%2Fubuntu%2Fline-bot-sample%2Fstatic%2Fimages%2Fsample1.jpg&content_type=image/jpeg&access_token=800e51199449a06c7ed0c29629e43df5'
-    print( event )
+    texts = []
+    files = []
+    recv_messeges = []
+    #text message
+    
+    
+    #image message
+    if( event.message.text in  )
+    image_url_dir = 'https://arcane-sea-27299.herokuapp.com/static/images/'
+    image_url_file = 'haiyoru1.jpg'
+    if event.message.text in recv_messeges:
+        files = os.listdir( image_url_dir )
+        image_url_file = files[ randint( len(files) ) ]
+    image_url = image_url_dir + image_url_file
     image_message = ImageSendMessage(
         original_content_url = image_url,
         preview_image_url = image_url
     )
 
-    #text message
     messages = [
         #TextSendMessage( text=event.message.text ),
-        #TextSendMessage( text="大事なことなので繰り返すぴょん\n" + event.message.text + "ぴょん" ),
         image_message
     ]
     
