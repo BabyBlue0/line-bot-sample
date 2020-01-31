@@ -59,7 +59,7 @@ def handle_message(event):
     print( os.listdir(os.getcwd()) )
     files = os.listdir( '/app' + image_url_dir )
     print( files )
-    image_url_file = files[ randint( len(files) ) ]
+    image_url_file = files[ randint( 0, len(files)-1 ) ]
     print( image_url_file )
     image_url = image_url_base + '/' + image_url_dir + '/' + image_url_file
     print( image_url )
