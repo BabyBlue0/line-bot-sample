@@ -42,7 +42,7 @@ def callback():
 
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
-    // text message
+    #text message
     messages = [
             #TextSendMessage( text=event.message.text ),
             TextSendMessage( text="大事なことなので繰り返すぴょん\n" + event.message.text + "ぴょん" )
@@ -53,7 +53,7 @@ def handle_message(event):
         messages
     )
 
-    //send image
+    #send image
 
     image_url = 'https://arcane-sea-27299.herokuapp.com/static/image/sample1.jpg'
     image_message = ImageSendMessage(
