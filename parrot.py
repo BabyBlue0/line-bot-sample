@@ -59,6 +59,7 @@ def handle_message(event):
     #main_image_path = MAIN_IMAGE_PATH.format( message_id )
     #preview_image_path = PREVIEW_IMAGE_PATH.format( message_id )
 
+    image_url = 'https://arcane-sea-27299.herokuapp.com/static/'
     image_message = ImageSendMessage(
             original_content_url='http://imgcc.naver.jp/kaze/mission/USER/20161222/76/7847676/6/782x576xe55f0f16e41bcf425462c775.jpg'
             preview_image_url='http://imgcc.naver.jp/kaze/mission/USER/20161222/76/7847676/6/782x576xe55f0f16e41bcf425462c775.jpg')
