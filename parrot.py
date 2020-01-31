@@ -53,7 +53,7 @@ def handle_message(event):
     #image message
     image_url_dir = 'https://arcane-sea-27299.herokuapp.com/static/images/'
     image_url_file = 'haiyoru1.jpg'
-    if event.message.text in recv_messeges:
+    #if event.message.text in recv_messeges:
         files = os.listdir( image_url_dir )
         image_url_file = files[ randint( len(files) ) ]
     image_url = image_url_dir + image_url_file
