@@ -54,7 +54,7 @@ def handle_message(event):
     image_url_base = 'https://arcane-sea-27299.herokuapp.com'
     image_url_dir = 'static/images/'
     image_url_file = 'haiyoru1.jpg'
-    
+    print( os.getcwd() )
     #if event.message.text in recv_messeges:
     files = os.listdir( image_url_dir )
     image_url_file = files[ randint( len(files) ) ]
