@@ -54,15 +54,14 @@ def handle_message(event):
     )
 
     //send image
-    message_id = event.message.id
 
     #src_image_path = Path( SRC_IMAGE_PATH.format(message_id ) ).absolute()
     #main_image_path = MAIN_IMAGE_PATH.format( message_id )
     #preview_image_path = PREVIEW_IMAGE_PATH.format( message_id )
 
     image_message = ImageSendMessage(
-            original_content_url="https://cdn.hasselblad.com/hasselblad-com/ac37ce86f144e6bd4c4dede9eece3c6df3c1ea97_tom-oldham-h6d-50c-sample1.jpg"
-    )
+            original_content_url='http://imgcc.naver.jp/kaze/mission/USER/20161222/76/7847676/6/782x576xe55f0f16e41bcf425462c775.jpg'
+            preview_image_url='http://imgcc.naver.jp/kaze/mission/USER/20161222/76/7847676/6/782x576xe55f0f16e41bcf425462c775.jpg')
 
     line_bot_api.reply_message( event.reply_token, image_message )
 
