@@ -57,7 +57,7 @@ def handle_message(event):
 
     image_url = 'https://arcane-sea-27299.herokuapp.com/static/image/sample1.jpg'
     image_message = ImageSendMessage(
-            original_content_url=image_url
+            original_content_url=image_url,
             preview_image_url=image_url
     )
 
