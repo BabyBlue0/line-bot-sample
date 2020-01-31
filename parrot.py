@@ -51,7 +51,6 @@ def handle_message(event):
     
     
     #image message
-    if( event.message.text in  )
     image_url_dir = 'https://arcane-sea-27299.herokuapp.com/static/images/'
     image_url_file = 'haiyoru1.jpg'
     if event.message.text in recv_messeges:
