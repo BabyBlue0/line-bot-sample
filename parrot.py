@@ -53,7 +53,7 @@ def handle_message(event):
     #text message
     messages = [
         #TextSendMessage( text=event.message.text ),
-        TextSendMessage( text="大事なことなので繰り返すぴょん\n" + event.message.text + "ぴょん" ),
+        #TextSendMessage( text="大事なことなので繰り返すぴょん\n" + event.message.text + "ぴょん" ),
         image_message
     ]
     
