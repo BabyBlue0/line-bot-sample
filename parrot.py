@@ -56,7 +56,9 @@ def handle_message(event):
     image_url_file = 'haiyoru1.jpg'
     print( os.getcwd() )
     #if event.message.text in recv_messeges:
+    print( os.listdir(os.getcwd()) )
     files = os.listdir( '/app' + image_url_dir )
+    print( files )
     image_url_file = files[ randint( len(files) ) ]
     image_url = image_url_base + '/' + image_url_dir + '/' + image_url_file
     image_message = ImageSendMessage(
